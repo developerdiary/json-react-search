@@ -20,7 +20,7 @@ const ListPosts = () => {
     setLoading(false);
   };
 
-  const searchPost = (searchValue) =>{
+  const searchPost = (searchValue) =>{ // Search In Title
     setSearch(searchValue)
     if (searchValue !== "") {
       let newSearchData = post.filter((value) => {
@@ -33,7 +33,6 @@ const ListPosts = () => {
     
   }
 
-  
   return (
     <div>
       <h1>Post</h1>
